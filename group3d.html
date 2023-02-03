@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>group 3</title>
+        <link rel="stylesheet" href="group3.css">
+        <style>
+            .accordion {
+              background-color: #eee;
+              color: #444;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+            
+            .active, .accordion:hover {
+              background-color: #ccc; 
+            }
+            
+            .panel {
+              padding: 0 18px;
+              display: none;
+              background-color: white;
+              overflow: hidden;
+              text-align: center;
+            }
+            body{
+            background-image: url(photo/001.jpg);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: brown;
+        }
+            </style>
+    </head>
+    <body>
+        <header>
+            <div class="topnav">
+                <a class="active" href="group3a.html">Home</a>
+                <a href="group3b.html">About us</a>
+                <a href="group3c.html">Trips</a>
+                <a href="group3d.html">Trip details</a>
+                <a href="group3e.html">Attractions</a>
+                <a href="group3f.html">Hostels</a>
+              </div>
+        </header><br><br>
+        <h1><center><i>TOURISM SAFARI COMPANY</i></center></h1>
+        <button class="accordion">Daressalaam - Zanzibar</button>
+<div class="panel">
+  <p>Cost per day :300,000/=<br>It comprise meals and accomodation,<br>tour guide and transport</p>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Book now</button>
+
+</div>
+
+<button class="accordion">Daressalaam - Serengeti</button>
+<div class="panel">
+  <p>Cost per day :500,000/=<br>It comprise meals and accomodation,<br>tour guide and transport.</p>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Book now</button>
+</div>
+
+<button class="accordion">Daressalaam - ngorongoro</button>
+<div class="panel">
+  <p>Cost per day :400,000/=<br>It comprise meals and accomodation,<br>tour guide and transport.</p>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Book now</button>
+</div>
+<button class="accordion">Mwanza - serengeti</button>
+<div class="panel">
+  <p>Cost per day :450,000/=<br>It comprise meals and accomodation,<br>tour guide and transport.</p>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Book now</button>
+</div>
+<button class="accordion">Mwanza - Ngorongoro</button>
+<div class="panel">
+  <p>Cost per day :550,000/=<br>It comprise meals and accomodation,<br>tour guide and transport.</p>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Book now</button>
+</div>
+<button class="accordion">Mwanza - Kilimanjaro</button>
+<div class="panel">
+  <p>Cost per day :400,000/=<br>It comprise meals and accomodation,<br>tour guide and transport.</p>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Book now</button>
+</div>
+<button class="accordion">Arusha - ngorongoro</button>
+<div class="panel">
+  <p>Cost per day :300,000/=<br>It comprise meals and accomodation,<br>tour guide and transport.</p>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Book now</button>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+    </body>
+</html>
